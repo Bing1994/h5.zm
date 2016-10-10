@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport"  content="width=device-width,user-scalable=no,initial-scale=0.5,maximum-scale=1.0"">
+<meta name="format-detection" content="telephone=no">
+<title>支付</title>
+</head>
+<link rel="stylesheet" href="css/pay.css">
+<link rel="stylesheet" href="css/base.css">
+<script>
+	(function(win,doc){
+		function change(){
+			doc.documentElement.style.fontSize=doc.documentElement.clientWidth/375*20+'px';
+		}		
+		change();
+		win.addEventListener('resize',change,false);
+	})(window,document);
+</script>
+<body>
+	<form class="msg" action="">
+		<ul class="cont">
+			<li class="order">订单号：<b>123456789</b></li>
+			<li class="name">项目名称：<b>[重睑术](切开或埋线)为你打造灵动双眸)为你打造)为你打造)为你打造)为你打造</b></li>
+			<li class="sum">实际付款金额：<b>500</b></li>
+		</ul>
+		<p class="way">请选择一种付款方式</p>
+		<ul class="payfor">
+			<li class="clearfix">
+				<p class="p-btn fl">
+					<input type="radio" name="pay" id="wechat" style="display:none" checked="true">
+					<label for="wechat"></label>
+				</p>
+				<div class="name fl">
+					<img src="image/pay/wx-logo.png" alt="">微信支付
+				</div>
+			</li>
+			<li class="clearfix">
+				<p class="p-btn fl">
+					<input type="radio" name="pay" id="Allipay" style="display:none">
+					<label for="Allipay"></label>
+				</p>
+				<div class="name fl" style="border:none">
+					<img src="image/pay/zfb-logo.png" alt="">支付宝支付
+				</div>
+			</li>
+		</ul>
+		<input type="button" value="确认支付" class="btn">
+	</form>
+	<div class="success" style="display:none">
+		<div class="opa"></div>
+		<div class="s-msg">
+			<img src="image/pay/smile.png" alt="">
+			<p>亲爱的“薯条君”<br>
+				您已完成付款<br>
+				请在7天内联系我们<br>
+				预约面诊时间<br>
+				我们的电话是：<a href="tel:010-56029359">010-56029359</a>
+			</p>
+			<div class="tiao"></div>
+			<div class="close"></div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+	$(function(){
+		$('.btn').on('click',function(){
+			$('.success').css('display','block');
+		});
+		$('.close').on('click',function(){
+			window.location.href="dd.html";
+		})
+	})
+</script>
+</html>

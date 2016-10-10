@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>提交订单</title>
+<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<link href="css/base.css" rel="stylesheet">
+<link href="css/tjdd.css" rel="stylesheet">
+</head>
+<script>
+	(function(win,doc){
+		function change(){
+			doc.documentElement.style.fontSize=doc.documentElement.clientWidth/375*20+'px';
+		}		
+		change();
+		win.addEventListener('resize',change,false);
+	})(window,document);
+</script>
+<body>
+	<form action="">
+		<div class="ddxx">
+	    	<div class="tel clearfix">
+	    		<span class="tel-logo fl"></span>
+	    		<div class="num fl" >确认手机号:<i>12345678901</i></div>
+	    		<div class="alter fr cleatfix">
+	    			<span class="xg"></span>修改
+	    		</div>
+	    	</div>
+	    	<div class="tel2 clearfix" style="display:none">
+	    		<span class="tel-logo fl"></span>
+	    		<div class="num2 fl"><input type="number" placeholder="请输入手机号"></div>
+	    		<div class="alter fr cleatfix">
+	    			完成
+	    		</div>
+	    	</div>
+	    	<div class="yyje clearfix">
+	    		<div class="je fl">参加金额：<i>20</i></div>
+	    		<div class="jf fr">赠送积分：<i>20</i></div>
+	    	</div>
+	    </div>
+	    <!-- 订单信息 -->
+	    <div class="bundlev">
+            <div class="shop">
+                <div class="title-shop">
+                    <div class="tcont clearfix">
+                        <div class="shopcb fl">
+                            <p>
+                                <input type="checkbox"  id="120" style="display:none" class="t-cb" name="newslist">
+                                <label for="120"></label>
+                            </p>
+                        </div>
+                        <div class="t-c clearfix fl">
+                            <div class="contcat fl">
+                                <a href="javascript:;">
+                                    上海艺星整容医疗医院
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group clearfix">
+                <div class="item-detail fl ">
+                    <div class="clearfix">
+                        <div class="item-img fl">
+                            <a href="javascript:;">
+                                <img src="image/tjdd/qg-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item-info fl">
+                            <a href="javascript:;">
+                                <h3 class="sku">[重睑术](切开或埋线)专为女性设计，为你打造灵动双眸拥有迷人气质</h3>
+                                <div class="money1">项目金额：<i>3500</i></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pay clearfix">
+                        <div class="price fl">
+                            预约金额：<i>350</i>
+                        </div>
+                        <div class="quantity clearfix fr">
+                            <p class="btn-minus">
+                                <a href="javascript:;">
+                                    <img src="image/tjdd/jian.png" alt="">
+                                </a>
+                            </p>
+                            <p class="btn-input">
+                                <input type="number" min="1" value="1">
+                            </p>
+                            <p class="btn-plus">
+                                 <a href="javascript:;">
+                                    <img src="image/tjdd/jia.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="group clearfix">
+                <div class="item-detail fl ">
+                    <div class="clearfix">
+                        <div class="item-img fl">
+                            <a href="javascript:;">
+                                <img src="image/tjdd/qg-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item-info fl">
+                            <a href="javascript:;">
+                                <h3 class="sku">[重睑术](切开或埋线)专为女性设计，为你打造灵动双眸拥有迷人气质</h3>
+                                <div class="money1">项目金额：<i>400</i></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pay clearfix">
+                        <div class="price fl">
+                            预约金额：<i>400</i>
+                        </div>
+                        <div class="quantity clearfix fr">
+                            <p class="btn-minus">
+                                <a href="javascript:;">
+                                    <img src="image/tjdd/jian.png" alt="">
+                                </a>
+                            </p>
+                            <p class="btn-input">
+                                <input type="number" min="1" value="1">
+                            </p>
+                            <p class="btn-plus">
+                                 <a href="javascript:;">
+                                    <img src="image/tjdd/jia.png" alt="">
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	    <div class="tj">
+	    	<div class="je fl">
+	    		<p class="f-yyje">预约金额：<i>0</i></p>
+	    		<p class="f-dyyzf">到医院再付的金额：<i>0</i></p>
+	    	</div>
+	    	<a href="pay.html" class="dd fl">提交订单</a> >
+	    </div>
+	</form>
+	<div class="zw"></div>
+</body>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+	$(function(){
+		$('.alter').on('click',function(){
+			$('.tel').css('display','none');
+			$('.tel2').css('display','block');
+		})
+		$('.tel2 .alter').on('click',function(){
+			$('.tel').css('display','block');
+			$('.tel .num i').html($('.tel2 input').val());
+			$('.tel2').css('display','none');
+		})
+		$('.xy span').toggle(function(){
+			$(this).css('background','#D7B359');
+		},function(){
+			$(this).css('background','#E0E0E0');
+		})
+		$('.close').on('click',function(){
+			$('.fwxy').hide();
+		})
+		$('.xy i').on('touchend',function(){
+			$('.fwxy').show();
+		})
+		//点击加减数字
+		$(".btn-plus").click(function () {
+            $(this).prev().children().val(parseInt($(this).prev().children().val()) + 1)
+            GetCount(); 
+        })
+        $(".btn-minus").click(function () {
+            if($(this).next().children().val()>0){
+                $(this).next().children().val(parseInt($(this).next().children().val()) - 1)
+                GetCount(); 
+            }
+        })
+        function GetCount() {
+        	var Gin=$('.group .pay input');
+            Gin.each(function(){
+            	console.log($(this).parents('.quantity').prev().find('i'))
+                $(this).parents('.quantity').prev().find('i').html(parseInt($(this).val()*200))
+            })
+            
+        	// 预约金额
+        	var Payi=$('.bundlev .pay .price i');
+        	// console.log(Payi)
+            var conts = 0;
+            Payi.each(function(){
+                conts += parseInt($(this).html());
+            })
+           $('.tj .f-yyje i').html(conts);
+
+           // 到医院付款金额
+           	var Moni=$('.group .money1 i');
+            var Am = 0;
+            Moni.each(function(){
+                Am += parseInt($(this).html()*($(this).parents('.item-detail').find('.pay input').val()));
+            })
+           $('.tj .f-dyyzf i').html(Am-conts);
+           //参加金额
+           $('.yyje .je i').html(Am);
+           $('.yyje .jf i').html(Am);
+
+        }
+        GetCount();
+		
+	})
+</script>
+</html>

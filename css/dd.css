@@ -1,0 +1,500 @@
+@charset "UTF-8";
+/*头部*/
+.tabBox .hd{
+	width: 100%;
+	height: 2.25rem;
+	background:#fff;
+	border-bottom: 0.025rem solid #E0E0E0;
+}
+.tabBox .hd ul{ 
+	box-sizing: border-box;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-left: 1.0rem;
+}
+.tabBox .hd ul li{
+	padding-top: 0.15rem;
+	min-width: 1.75rem;
+	margin-right: 1.1rem;
+	display: inline-block;
+}
+.tabBox .hd a{
+	display: block;
+	height: 1.95rem;
+	line-height: 1.95rem;
+	font-size: 0.75rem;
+	color: #4A4A4A;
+	letter-spacing: 0px;
+	min-width: 1.75rem;
+	text-align: center;
+}
+.line{
+	height: 0.15rem;
+	width: 1.75rem;
+	background: #D7B359;
+	display: block; 
+	margin: 0 auto;
+}
+.tabBox {
+	border-radius: 0.2rem;
+	background: #fff;
+}
+img{
+	width: 100%;
+}
+/*下面部分设置*/
+.bd{
+	background: #f2f2f2;
+}
+.xian{
+	width: 100%;
+	height: 0.5px;
+	background:#D7D4D4;
+	margin-top: 0.75rem;
+	margin-bottom: -0.25rem;
+	position: relative;
+}
+.xian:before{
+	position: absolute;
+    top: -50%;
+    bottom: -50%;
+    left: -50%;
+    right: -50%;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    height: 1px;
+}
+/*全部*/
+.all{
+	width: 100%;
+	background: #f2f2f2;
+}
+.list{
+	background: #fff;
+	border-radius: 0.2rem;
+	padding:0.75rem 0.75rem 0.35rem;
+	margin: 0.5rem 0.4rem;
+
+}
+.list h2{
+	font-size: 0.65rem;
+	color: #4A4A4A;
+}
+.list h2 .circle{
+	display: block;
+	width: 0.65rem;
+	height: 0.65rem;
+	background: #EDEDED;
+	border-radius: 50%;
+	float: left;
+	margin-top: 0.125rem;
+	margin-right: 0.5rem;
+}
+.list h2 .circle2{
+	background: #D7B359;
+}
+.list dt{
+	width: 3.625rem;
+	height: 3.5rem;
+	border-radius: 0.2rem;
+	overflow: hidden;
+	margin-right: 0.5rem;
+}
+.list dl p{
+	width: 12.0rem;
+	font-size: 0.6rem;
+	color: #4A4A4A;
+	letter-spacing: 0px;
+	line-height: 0.875rem;
+	text-align: left;
+}
+.list dl .item{
+	margin-bottom: 0.5rem;
+}
+.list dl i,.list dl b{
+	font-size: 0.6rem;
+	color: #4A4A4A;
+	letter-spacing: 0px;
+	line-height: 0.875rem;
+}
+
+.list .del{
+	margin-top: 0.4rem;
+	display: inline-block;
+	float: right;
+}
+.list .del a{
+	width: 3.95rem;
+	height: 1.1rem;
+	/*border: 1px solid #D7B359;*/
+	/*border-radius: 0.2rem;*/
+	font-size: 0.6rem;
+	color: #D7B359;
+	text-align: center;
+	line-height: 1.2rem;
+	display: inline-block;
+	position: relative;
+}
+.list .del a:before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    bottom: -50%;
+    left: -50%;
+    right: -50%;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    border-style: solid;
+    border-width: 1px;
+    border-color: #D7B359;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+.list .del a:active{
+	width: 3.95rem;
+	height: 1.1rem;
+	border: 0.025rem solid #D7B359;
+	border-radius: 0.2rem;
+	font-size: 0.6rem;
+	color: #fff;
+	text-align: center;
+	line-height: 1.1rem;
+	display: inline-block;
+	background: #D7B359;
+}
+.list .del a img{
+	width: 0.525rem;
+	height: 0.625rem;
+	margin-top: 0.25rem;
+	margin-right: 0.25rem;
+}
+.list .del span{
+	margin-top: 0.125rem;
+	font-size: 0.5rem;
+	color: #FF5C3B;
+	margin-right: 0.35rem;
+	vertical-align: bottom;
+}
+.list .article{
+	margin-top: 1.0rem;
+}
+/*待付款*/
+.obligation{
+	width: 18.75rem;
+}
+.wrap{
+    padding: 0.5rem 0.4rem 0.25rem;
+}
+.btn{
+	width: 18.75rem;
+	height: 2.45rem;
+	background: #D7B359;
+	text-align: center;
+	line-height: 2.45rem;
+	font-size: 0.75rem;
+	border-radius: 0;
+	border:0;
+	color:#fff;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	display: none;
+}
+/*已预约*/
+.already{
+}
+
+.already-opa{
+	width: 100%;
+	height: 100%;
+	padding-top: 7.6rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.opa{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*display: none;*/
+}
+.qbl-tc{
+	width: 13.725rem;
+	height: 11.75rem;
+	background: #fff;
+	z-index: 3;
+	position: absolute;
+	left: 2.5rem;
+	top: 7.6rem;
+	border-radius: 0.2rem;
+	display: block;
+}
+.qbl-tc img{
+	width: 3.125rem;
+	height: 2.85rem;
+	background-size: 100%;
+	margin-top: 1.5rem;
+	margin-left: 5.35rem;
+	margin-bottom: 1.1rem;
+}
+.qbl-tc p,.qbl-tc b{
+	width: 10.0rem;
+	font-size: 0.75rem;
+	color: #4A4A4A;
+	letter-spacing: 0px;
+	line-height: 1.05rem;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+}
+.qbl-tc b i{
+	color: red;
+	width: 9.0rem;
+	font-size: 0.75rem;
+}
+.qbl-tc div{
+	padding-left: 0.325rem;
+	margin-top: 1.0rem;
+}
+.qbl-tc input{
+	margin: 0 auto;
+	width: 4.275rem;
+	height: 1.2rem;
+	border: 1px solid #D7B359;
+	border-radius: 0.2rem;
+	font-size: 0.625rem;
+	color: #4A4A4A;
+	background: #fff;
+	margin-left: 1.5rem;
+}
+/*取消成功*/
+.qxcg{
+	width: 13.725rem;
+	height: 9.3rem;
+	background: #fff;
+	position: absolute;
+	left: 2.5rem;
+	top: 10.05rem;
+	border-radius: 0.2rem;
+	display: none;
+}
+.qxcg img{
+	width: 2.575rem;
+	height: 1.15rem;
+	background-size: 100%;
+	margin-top: 2.275rem;
+	margin-left: 5.3rem;
+}
+.qxcg p{
+	width: 8.25rem;
+	font-size: 0.75rem;
+	color: #4A4A4A;
+	line-height: 1.05rem;
+	margin:0 auto;
+	text-align: center;
+	margin-top: 1.5rem
+}
+.tiao{
+	width: 0.1rem;
+	height:2.375rem;
+	background: #fff;
+	position: absolute;
+	right: 0.925rem;
+	bottom: -2.3rem;
+}
+.close{
+	width: 1.3rem;
+	height: 1.3rem;
+	background: url(../img/close.png);
+	background-size: 100%;
+	position: absolute;
+	right: 0.3rem;
+	bottom: -3.55rem;
+}
+/*待预约*/
+.make{
+
+}
+.make-opa{
+	display: none;
+}
+/*待预约透明层*/
+.make-opa .tiao{
+	width: 0.1rem;
+	height: 2.75rem;
+	background: #fff;
+	position: absolute;
+	right: 0.925rem;
+	bottom: -2.3rem
+}
+.make-opa{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+.make-tel{
+	width: 13.725rem;
+	height: 10.0rem;
+	background: #fff;
+	border-radius: 0.2rem;
+	position: absolute;
+	z-index: 3;
+	left: 2.5rem;
+	top: 8.475rem;
+}
+.make-tel img{
+	width: 3.1rem;
+	height: 1.8rem;
+	background-size: 100%;
+	margin-left: 5.4rem;
+	margin-top: 1.675rem;
+	margin-bottom: 1.25rem;
+}
+.make-tel p{
+	width: 9.0rem;
+	text-align: center;
+	font-size: 0.75rem;
+	color: #4A4A4A;
+	line-height: 1.05rem;
+	margin:0 auto;
+}
+.make-tel div a:nth-child(1){
+	margin-left: 1.825rem;
+}
+.make-tel a{
+	margin: 0 auto;
+	width: 4.275rem;
+	height: 1.2rem;
+	border: 1px solid #D7B359;
+	border-radius: 0.2rem;
+	font-size: 0.625rem;
+	color: #4A4A4A;
+	background: #fff;
+	margin-left: 1.5rem;
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 1.2rem;
+	margin-top: 1.0rem;
+	  
+}
+/*待评价*/
+.evaluation{
+
+}
+/*已取消*/
+.cancel{
+
+}
+/*占位*/
+.zw{
+	height: 2.25rem;
+}
+
+/*订单公用*/
+.bundlev{
+    background: #fff;
+    border-radius: 0.2rem;
+    margin-bottom: 0.5rem;
+    padding:0.75rem 0.75rem 0.35rem;
+}
+/*商铺名称信息*/
+.title-shop{
+    width: 100%;
+    height:0.65rem;
+    border-bottom: 1px solid #D7D4D4;
+    margin-bottom: 0.75rem; padding-bottom: 0.75rem;
+
+}
+.title-shop .t-cb+label{
+    width: 0.65rem;
+    height: 0.65rem;
+    background: #EDEDED;
+    border-radius: 50%;
+    display: block;
+}
+.title-shop .t-cb:checked+label{
+    background: #D7B359;
+}
+.tcont{
+    width: 100%;
+    height: 100%;
+}
+.contcat a{
+    font-size: 0.65rem;
+    color: #4A4A4A;
+    line-height: 0.65rem;
+}
+.tcont .t-c{
+    width: 15.125rem;
+}
+.item-img {
+    width: 3.625rem;
+    height: 3.5rem;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    margin-right: 0.5rem;
+}
+.item-info{
+    width: 12rem;
+}
+.item-info a .sku{
+    font-size: 0.6rem;
+    color: #4A4A4A;
+    line-height: 0.875rem;
+}
+.item-info a .money1,.item-info a .num{
+    font-size: 0.6rem;
+    color: #4A4A4A;
+    margin-top: 0.5rem;
+}
+.item-info a .money1 i,.item-info a .num  i{
+    font-size: 0.6rem;
+    color: #4A4A4A;
+    margin-top: 0.5rem;
+}
+.pay{
+	margin-top: 0.25rem;
+}
+.pay a{
+	border:1px solid #D7B359;
+	font-size: 0.6rem;
+    color: #D7B359;
+    text-align: center;
+    line-height: 1.1rem;
+    display: inline-block;
+    position: relative;
+    border-radius: 0.2rem;
+    height: 1.1rem;
+    width: 3.95rem;
+    float: right;
+}
+.pay span{
+	margin-top: 0.5rem;
+    font-size: 0.5rem;
+    color: #FF5C3B;
+    margin-right: 0.35rem;
+    vertical-align: bottom;
+    display: block;
+}
+.group{
+	margin-bottom: 0.5rem;
+}
+.shopcb{
+    margin-right: 0.675rem;
+}
+.pay a img{
+	width: 0.525rem;
+	height: 0.625rem;
+	margin-top: 0.25rem;
+	margin-right: 0.25rem;
+}

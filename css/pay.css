@@ -1,0 +1,162 @@
+@charset "UTF-8";
+body{
+	background: #f2f2f2;
+	padding: 0.5rem 0.4rem;
+}
+.cont{
+	background: #fff;
+	border-radius: 0.2rem;
+	padding:0 1.15rem 0 0.75rem;
+}
+.cont li{
+	width: 100%;
+	font-size: 0.625rem;
+	color: #4A4A4A;
+	height: 1.975rem;
+	line-height: 1.975rem;
+	border-bottom: 1px solid #E0E0E0;
+	overflow: hidden;
+	white-space:nowrap; 
+	text-overflow: ellipsis;
+}
+.cont li b{
+	width: 100%;
+	font-size: 0.625rem;
+	color: #4A4A4A;
+	height: 1.975rem;
+	line-height: 1.975rem;
+}
+.cont li:last-child{
+	border:0;
+}
+.way{
+	font-size: 0.7rem;
+	color: #4A4A4A;
+	margin: 0.75rem 0;
+	line-height: 0.7rem;
+}
+.payfor{
+	background: #fff;
+	border-radius: 0.2rem;
+}
+.payfor li{
+	height: 2.025rem;
+}
+.payfor div{
+	width: 84%;
+	border-bottom: 1px solid #E0E0E0;
+	line-height: 2rem;
+	/*margin-right: 1.15rem;*/
+	margin-left: 0.7rem;
+	font-size: 0.625rem;
+	color: #4A4A4A;
+}
+.payfor span{
+	width: 0.65rem;
+	height: 0.65rem;
+	border-radius: 50%;
+	background: #E0E0E0;
+	display: block;
+	float: left;
+	margin:0.75rem 0 0 0.75rem;
+}
+.payfor span.on{
+	background: #D7B359;
+}
+.payfor img{
+	width: 1.025rem;
+	height: 0.825rem;
+	background-size: 100%;
+	margin-top: 0.625rem;
+	margin-right:0.3rem;
+}
+.btn{
+	width: 100%;
+	height: 2.45rem;
+	background: #D7B359;
+	font-size: 0.75rem;
+	color: #FFFFFF;
+	line-height: 2.45rem;
+	text-align: center;
+	border:0;
+	border-radius: 0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.success{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.opa{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.3;
+}
+.success .s-msg{
+	width: 13.725rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -6.8625rem;
+	top: 0;
+	padding-top: 2.425rem;
+	background: #fff;
+	text-align: center;
+	padding-bottom: 1.35rem;
+	border-radius: 0.2rem;
+	margin-top: 8.075rem;
+}
+.success .s-msg img{
+	width: 4.275rem;
+	background-size: 100%;
+}
+.success .s-msg p{
+	font-size: 0.75rem;
+	color: #4A4A4A;
+	line-height: 1.05rem;
+	margin-top: 1.0rem;
+}
+.success .s-msg p a{
+	font-size: 0.75rem;
+	line-height: 1.05rem;
+	color: #D7B359;
+}
+.success .tiao{
+	width: 0.1rem;
+	height: 2.75rem;
+	position: absolute;
+	right: 0.925rem;
+	bottom:-2.5rem;
+	background: #fff;
+}
+.success .close{
+	width: 1.3rem;
+	height: 1.3rem;
+	background: url(../image/pay/close.png) no-repeat;
+	position: absolute;
+	right: 0.3rem;
+	bottom:-3.75rem;
+	background-size: 100%;
+}
+.p-btn{
+	
+	border-radius: 50%;
+	display: block;
+	float: left;
+	margin:0.75rem 0 0 0.75rem;
+}
+.p-btn label{
+	background: #E0E0E0;
+	display: block;
+	width: 0.65rem;
+	height: 0.65rem;
+	border-radius: 50%;
+}
+.p-btn input:checked + label{
+    background: #D7B359;
+}
+

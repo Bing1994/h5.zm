@@ -1,0 +1,147 @@
+body{
+	background: #f2f2f2;
+}
+
+
+header .name{
+	font-size: 0.75rem;
+	color: #FFFFFF;
+	line-height: 0.75rem;
+	margin-top: 5.5rem;
+	position: absolute;
+ 	width: 100%;
+    text-align: center;
+}	
+header{
+	width: 18.75rem;
+	height: 7.025rem;
+    position: relative;
+    background-size: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.h-bj{
+	width: 19rem;
+	height: 9rem;
+	background: url(../image/jf/h-bj.jpg) no-repeat;
+	position: relative;
+	background-size: 100%;
+	position: absolute;
+	-webkit-filter: blur(2px);
+	background-position: center;
+}
+.h-bj .opa{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #000;
+	opacity: 0.2;
+}
+.hp{
+	width: 3.5rem;
+	height: 3.5rem;
+	background:#000;
+	position: absolute;
+	left: 50%;
+	margin-left: -1.75rem;
+	border-radius: 50%;
+	margin-top: 1.25rem;
+}	
+.cont{
+	background:#f2f2f2;
+	padding: 0.375rem 0.4rem 0;
+}
+.cont .jf{
+	padding: 0.75rem;
+	background: #fff;
+	border-radius: 0.2rem;
+}
+.cont .jf img{
+	width: 0.725rem;
+	height: 0.675rem;
+	margin-top: 0.15rem;
+
+}
+.cont .jf p{
+	font-size: 0.7rem;
+	color: #4A4A4A;
+	margin-left: 0.55rem;
+}
+.cont .jf p b{
+	font-size: 0.7rem;
+	color: #4A4A4A;
+	margin-left: 0.5rem;
+}
+.cont .jfzn{
+	background: #fff;
+	border-radius: 0.2rem;
+	margin-top: 0.5rem;
+	padding: 0.75rem;
+}
+.cont .jfzn .tit{
+	border-bottom: 0.5px solid #E0E0E0;
+	padding-bottom: 0.625rem;
+}
+.cont .jfzn .tit p{
+	font-size: 0.7rem;
+	color: #4A4A4A;
+}
+.cont .jfzn .tit .ico{
+	width: 0.8rem;
+	height: 0.75rem;
+	background: url(../image/jf/jfzn-l.png);
+	display: block;
+	margin-right: 0.5rem;
+	float: left;
+	margin-top: 0.15rem;
+	background-size: 100%;
+}
+.cont .jfzn .system h2{
+	font-size: 0.65rem;
+	color: #4A4A4A;
+}
+.cont .jfzn .system h3{
+	font-size: 0.625rem;
+	color: #4A4A4A;
+}
+.cont .jfzn .system p{
+	font-size: 0.5rem;
+}
+.system{
+	margin-left: 1.25rem;
+	margin-top: 0.625rem;
+}
+.cont .jfzn .system p{
+	text-indent:2em;
+	color: #4A4A4A;
+}
+/*额外积分*/
+.cont .ewjf{
+	margin-top: 0.25rem;
+	width: 15.0rem;
+	border:1px solid #4A4A4A;
+	border-bottom: none;
+	box-sizing: border-box;
+}
+.cont .jfzn .system .ewjf p{
+	width: 33.33%;
+	float: left;
+	margin-left: 0;
+	box-sizing: border-box;
+	height: 100%;
+	text-indent:0;
+	color: #4A4A4A;
+
+
+}
+.cont .jfzn .system .ewjf p:nth-child(2n){
+	border-right: 1px solid #4A4A4A;
+	border-left: 1px solid #4A4A4A;
+
+}
+.cont .jfzn .system .ewjf div{
+	border-bottom: 1px solid #4A4A4A;
+
+}

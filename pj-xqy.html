@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<title>美区</title>
+<link href="css/base.css" rel="stylesheet">
+<link href="css/pj-xqy.css" rel="stylesheet">
+</head>
+<script>
+    (function(win,doc){
+        function change(){
+            doc.documentElement.style.fontSize=doc.documentElement.clientWidth/375*20+'px';
+        }       
+        change();
+        win.addEventListener('resize',change,false);
+    })(window,document);
+</script>
+<body>
+    <header>
+        <div class="h-bj">
+            <div class="opa"></div>
+        </div>
+        <img src="image/pj-xqy/h-bj.jpg" alt="" class="hp">
+        <div class="name">薯条君</div>
+        <div class="integral">女  18-29岁 北京市</div>
+    </header>
+    <div class="wrap">
+        <div class="gmxm">
+            <ul class="xm-t clearfix ">
+                <li class="fl"><img src="image/pj-xqy/gm.png" alt=""></li>
+                <div class="tit clearfix fl">
+                    <li class>购买项目</li>
+                </div>
+            </ul>
+            <div class="xian"></div>
+            <div class="cont clearfix">
+                <img src="image/pj-xqy/qg-1.jpg" alt="" class="fl">
+                <div class="msg fl">
+                    <p>[重睑术](切开或埋线)专为女性设计，为你打造灵动双眸拥有迷人气质</p>
+                    <i><img src="image/pj-xqy/qian.png" alt="">9800</i>
+                    <div class="star clearfix">
+                        <img src="image/pj-xqy/star-1.png" alt="">
+                        <img src="image/pj-xqy/star-1.png" alt="">
+                        <img src="image/pj-xqy/star.png" alt="">
+                        <img src="image/pj-xqy/star.png" alt="">
+                        <img src="image/pj-xqy/star.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="compare">
+            <ul class="xm-t clearfix ">
+                <li class="fl"><img src="image/pj-xqy/bj.png" alt=""></li>
+                <div class="tit clearfix fl">
+                    <li class="fl">术后比较</li>
+                    <li class="fr unlike"></li> 
+
+                </div>
+            </ul>
+            <div class="xian"></div>
+            <div class="shbj clearfix" >
+                <img src="image/pj-xqy/qg-1.jpg" alt="" class="fl">
+                <img src="image/pj-xqy/qg-1.jpg" alt="" class="fl">
+            </div>
+            <ul class="xm-t clearfix ">
+                <li class="fl"><img src="image/pj-xqy/xd.png" alt=""></li>
+                <div class="tit fl">
+                    <li class="">术后心得</li>
+                </div>
+            </ul>
+            <div class="xian"></div>
+            <div class="shxd clearfix">
+                <img src="image/pj-xqy/qg-1.jpg" alt="" class="fl">
+                <img src="image/pj-xqy/qg-1.jpg" alt="" class="fl">
+                <img src="image/pj-xqy/qg-1.jpg" alt="" class="fl">
+            </div>
+            <p>身边好多朋友都做了微整，心里也一直痒痒可我妈也不准我去。但是我的职业是平面模特，我也是女士，我怎么能让自己不完美，心里很纠结。
+自己也有很多的担心，毕竟负面新闻太多，要慎重选择。通过朋友介绍，找的致美。主要因为朋友找他做的。挺好看的，不然我也不敢去。</p>
+        </div>
+    </div>
+</body>
+<script src='../jquery-1.7.2.js'></script>
+<script>
+    $(function(){
+        $('.xm-t .tit li:nth-child(2)').on('click',function(){
+            if($(this).hasClass('unlike')){
+                $(this).removeClass('unlike')
+                $(this).addClass('like');
+            }
+        })
+    })
+</script>
+</html>

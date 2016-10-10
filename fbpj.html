@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=0.5,maximum-scale=1.0" >
+<title>发布评价</title>
+<link href="css/fbpj.css" rel="stylesheet">
+<link href="css/base.css" rel="stylesheet">
+</head>
+<script>
+	(function(win,doc){
+		function change(){
+			doc.documentElement.style.fontSize=doc.documentElement.clientWidth/375*20+'px';
+		}		
+		change();
+		win.addEventListener('resize',change,false);
+	})(window,document);
+</script>
+<body>
+    <form action="">
+        <div class="pj clearfix">
+            <!-- 项目 -->
+            <div class="xm">
+                <img src="image/fbpj/show1.png" alt="">
+                <p>[重睑术](切开或埋线)</p>
+                <div class="star">
+                    <img src="image/fbpj/star1.png" alt="">
+                    <img src="image/fbpj/star1.png" alt="">
+                    <img src="image/fbpj/star1.png" alt="">
+                    <img src="image/fbpj/star1.png" alt="">
+                    <img src="image/fbpj/star1.png" alt="">
+                </div>
+            </div>
+            <!-- 医院 -->
+            <div class="yy">
+                <img src="image/fbpj/show1.png" alt="">
+                <p>伊美尔(健翔)整形美容医院</p>
+                <div class="star">
+                    <img src="image/fbpj/star1.png" alt="">
+                    <img src="image/fbpj/star1.png" alt="">
+                    <img src="image/fbpj/star1.png" alt="">
+                    <img src="image/fbpj/star1.png" alt="">
+                    <img src="image/fbpj/star1.png" alt="">
+                </div>
+            </div>
+        </div>
+    	<div class="shbj">
+    		<h2>术后比较</h2>
+    		<ul class="show clearfix">
+    			<li>术前</li>
+    			<li class="border"><a href="javascript:;">点击添加</a></li>
+    			<li>术后</li>
+                <li class="border"><a href="javascript:;">点击添加</a></li>
+                
+    		</ul>
+    	</div>
+    	<div class="shxd">
+    		<h2>术后心得</h2>
+    		<textarea placeholder="评价详情(不得少于300字)"></textarea>
+    		<div class="show clearfix">
+    			<a href="javascript:;" class="border"><p>点击添加<br>最多三张</p></a>
+    			<a href="javascript:;" class="border"><p>点击添加<br>最多三张</p></a>
+                <a href="javascript:;" class="border"><p>点击添加<br>最多三张</p></a>
+    		</div>
+    	</div>
+    	<input type="button" value="提交评价" class="btn">
+    </form>
+    <div class="zw"></div>
+    <div class="success">
+    	<img src="image/fbpj/smile.png" alt="">
+    	<p>亲爱的“薯条君”您已提交成功</p>
+    	<div class="tiao"></div>
+    	<div class="close"></div>
+    </div>
+    <div class="opa"></div>
+</body>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+    $(function(){
+        $(function(){
+            $('.btn').on('click',function(){
+                $('.opa').css('display','block');
+                $('.success').css('display','block');
+            });
+            $('.success .close').on('click',function(){
+                window.location.href="../评价页面/index.html";
+            })
+            $('.star img').on('click',function(){
+                $(this).prevAll().attr('src','image/fbpj/star.png');
+                $(this).attr('src','image/fbpj/star.png');
+                $(this).nextAll().attr('src','image/fbpj/star1.png');
+            })
+        })
+    })
+</script>
+</html>

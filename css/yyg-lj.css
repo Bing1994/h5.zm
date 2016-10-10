@@ -1,0 +1,120 @@
+@charset "UTF-8";
+body{
+	background: #f2f2f2;
+	padding:0.5rem 0.4rem;
+}
+.change {
+	background: #fff;
+	border-radius: 0.2rem;
+	overflow: hidden;
+	padding-left: 0.75rem;
+}
+.change input{
+	height: 2.1rem;
+	line-height: 2.1rem;
+	font-size: 0.625rem;
+	border:0;
+	border-radius: 0;
+	float: left;
+	width: 14.65rem;
+}
+.change .name input{
+	border-bottom: 1px solid #E0E0E0;
+}
+.change .tel span{
+	width: 0.8rem;
+	height: 0.8rem;
+	float: left;
+	display: block;
+	margin-top: 0.6rem;
+	margin-right: 0.55rem;
+	background: url(../image/yyg-dd/tel.png);
+	background-size: 100%;
+}
+.change .name span{
+	width: 0.85rem;
+	height: 0.875rem;
+	float: left;
+	display: block;
+	margin-right: 0.55rem;
+	background: url(../image/yyg-dd/name.png);
+	background-size: 100%;
+	margin-top: 0.65rem;
+}
+.name,.tel{
+	width: 100%;
+}
+.tj{
+	width: 100%;
+}
+.tj input{
+	width: 100%;
+	height: 2.45rem;
+	position: fixed;
+	border:0;
+	bottom: 0;
+	left: 0;
+	background: #D7B359;
+	font-size: 0.875rem;
+	color: #FFFFFF;
+	border-radius: 0;
+	text-align: center;
+}
+.tjcg{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.opa{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.3;
+	
+}
+.success{
+	width: 13.725rem;
+	padding-top: 2.425rem;
+	background: #fff;
+	border-radius: 0.2rem;
+	z-index: 5;
+	position: absolute;
+	left: 2.5rem;
+	top: 9.3rem;
+	text-align: center;
+	padding-bottom: 1.35rem;
+}
+.success img{
+	width: 4.275rem;
+	background-size: 100%;
+	margin-bottom: 0.9rem;
+}
+.success p{
+	font-size: 0.75rem;
+	color: #4A4A4A;
+}
+.success p i{
+	font-size: 0.75rem;
+	color: #D7B359;
+
+}
+.success .xian{
+	width: 0.1rem;
+	height: 2.75rem;
+	background: #fff;
+	position: absolute;
+	right: 0.925rem;
+	bottom: -2.7rem;
+}
+.success .close{
+	width: 1.3rem;
+	height: 1.3rem;
+	background: url(../image/yyg-dd/close.png);
+	background-size: 100%;
+	position: absolute;
+	right: 0.3rem;
+	bottom: -4rem;
+}

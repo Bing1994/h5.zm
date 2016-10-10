@@ -1,0 +1,185 @@
+body{
+	background: #F2F2F2;
+}
+header{
+	width: 18.75rem;
+    height: 8.3rem;
+    position: relative;
+    background-size: 100%;
+    position: relative;
+    overflow: hidden;
+}
+img{display: block;}
+.h-bj{
+	width: 19rem;
+	height: 9rem;
+	background: url(../image/pj-xqy/h-bj.jpg) no-repeat;
+	position: relative;
+	background-size: 100%;
+	position: absolute;
+	-webkit-filter: blur(2px);
+	background-position: center;
+}
+.h-bj .opa{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #000;
+	opacity: 0.2;
+}
+.hp{
+	width: 3.5rem;
+	height: 3.5rem;
+	background:#000;
+	position: absolute;
+	left: 50%;
+	margin-left: -1.75rem;
+	border-radius: 50%;
+	margin-top: 1.25rem;
+}
+.yyg-logo{
+	width: 1.625rem;
+    height: 1.425rem;
+    background: url(../image/pj-xqy/yygsd-l.png);
+    display: block;
+    background-size: 100%;
+    position: absolute;
+    right: 0;
+    top: -1.1rem;
+}
+.name,.integral{
+    height: 0.75rem;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    position: absolute;
+    margin-top: 5.25rem;
+    width: 100%;
+}
+.integral{
+	position: absolute;
+	margin-top: 6.5rem;
+}
+.wrap{
+	padding: 0.5rem 0.4rem;
+}
+.gmxm{
+	background: #fff;
+	border-radius: 0.2rem;
+	padding: 0.75rem 0.75rem 0.65rem 0.75rem;
+	margin-bottom: 0.5rem;
+	margin-top: 0.45rem;
+}
+.xm-t li{
+	line-height: 0.7rem;
+	font-size: 0.7rem;
+	color: #4A4A4A;
+	letter-spacing: 0.0rem;
+}
+.xm-t li:nth-child(1) img{
+	width: 0.625rem;
+	height: 0.625rem;
+	margin-top: 0.075rem;
+	margin-right: 0.55rem;
+}
+.xm-t li.zw{
+	width: 0.5rem;
+}
+.xm-t .unlike{
+	width: 0.7rem;
+	height: 0.65rem;
+	background: url(../image/pj-xqy/unlike.png) no-repeat;
+	background-size: 100%;
+}
+.xm-t .like{
+	width: 0.7rem;
+	height: 0.65rem;
+	background: url(../image/pj-xqy/like.png) no-repeat;
+	background-size: 100%;
+}
+.xm-t .tit{
+	margin-bottom: 0.6rem;
+	padding-bottom: 0.6rem;
+	width: 15.225rem;
+	border-bottom: 1px solid #E0E0E0;
+	position: relative;
+}
+.cont{
+	padding-left: 1.225rem;
+}
+.cont img{
+	width: 3.625rem;
+	height: 3.5rem;
+	margin-right: 0.5rem;
+	border-radius: 0.2rem;
+}
+.cont p{
+	width: 11.1rem;
+	font-size: 0.5rem;
+	color: #4A4A4A;
+	letter-spacing: 0px;
+	line-height: 0.775rem;
+	margin-top: 0.25rem;
+}
+.msg i{
+	font-family: DINPro-Light;
+	font-size: 0.75rem;
+	color: #D7B359;
+	letter-spacing: 0.0rem;
+}
+.msg i img{
+	width: 0.45rem;
+	height: 0.55rem;
+	margin-top: 0.2rem;
+	margin-right: 0.25rem;
+	margin-left: 0.075rem;
+	display: inline-block;
+	border-radius: 0;
+}
+.star{
+	margin-top: 0.3rem;
+}
+.star img{
+	width: 0.575rem;
+	height: 0.55rem;
+	float: right;
+	margin-right: 0.2rem;
+}
+.compare{
+	background: #fff;
+	border-radius: 0.2rem;
+	padding: 0.75rem 0.75rem 0.65rem 0.75rem;
+}
+.shbj,.shxd,.compare p{
+	margin-left: 1.225rem;
+}
+.shbj img{
+	width: 6.8rem;
+	height: 6.975rem;
+	/*background: #000;*/
+	margin-right: 0.3rem;
+	margin-bottom: 1.0rem;
+	border-radius: 0.2rem;
+
+}
+.shxd img{
+	width: 4.9rem;
+	height: 4.9rem;
+	margin-right: 0.25rem;
+	border-radius: 0.2rem;
+}
+.shxd img:last-child{
+	margin-right: 0;
+}
+.compare p{
+	font-size: 0.65rem;
+	color: #4A4A4A;
+	letter-spacing: 0px;
+	line-height: 0.875rem;
+	margin-top: 0.625rem;
+	margin-bottom: 0.625rem;
+
+}

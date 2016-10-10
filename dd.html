@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0, user-scalable=0">
+<script src="js/TouchSlide.1.1.source.js"></script>
+<script src="js/jquery-1.7.2.js"></script>
+<script src="js/dd.js"></script>
+<title>全部订单</title>
+<link rel="stylesheet" href="css/dd.css">
+<link rel="stylesheet" href="css/base.css">
+<script>
+	(function(win,doc){
+		function change(){
+			doc.documentElement.style.fontSize=doc.documentElement.clientWidth/375*20+'px';
+		}		
+		change();
+		win.addEventListener('resize',change,false);
+	})(window,document);
+</script>
+</head>
+<body>
+	<div id="content">
+		<div id="leftTabBox" class="tabBox">
+			<div class="hd">
+				<ul class="clearfix">
+					<li><a href="#">全部</a><i></i></li>
+					<li><a href="#">待付款</a><i></i></li>
+					<li><a href="#">已预约</a><i></i></li>
+					<li id="dyy"><a href="#">待预约</a><i></i></li>
+					<li><a href="#">待评价</a><i></i></li>
+					<li><a href="#">已取消</a><i></i></li>
+					<li><a href="#">已评价</a><i></i></li>
+
+				</ul>
+			</div>
+			<div class="bd">
+				<!-- 全部 -->
+				<ul class="all">
+					<div class="wrap">
+						<div class="bundlev">
+				            <div class="shop">
+				                <div class="title-shop">
+				                    <div class="tcont clearfix">
+				                        <div class="t-c clearfix fl">
+				                            <div class="contcat fl">
+				                                <a href="javascript:;">
+				                                    上海艺星整容医疗医院
+				                                </a>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="group clearfix">
+				                <div class="item-detail fl ">
+				                    <div class="clearfix">
+				                        <div class="item-img fl">
+				                            <a href="javascript:;">
+				                                <img src="image/dd/qg-1.jpg" alt="">
+				                            </a>
+				                        </div>
+				                        <div class="item-info fl">
+				                            <a href="javascript:;">
+				                                <h3 class="sku">[重睑术](切开或埋线)专为女性设计，为你打造灵动双眸拥有迷人气质</h3>
+				                                <div class="clearfix">
+				                                	<div class="money1 fl">预约金额：<i>200</i></div>
+				                                	<div class="num fr">数量：<i>1</i></div>
+				                                </div>
+				                            </a>
+				                        </div>
+				                    </div>
+				                    <div class="pay clearfix">
+	                                	<a>删除订单</a>
+	                                	<span class="fr">交易关闭</span>
+	                                </div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="bundlev">
+				            <div class="shop">
+				                <div class="title-shop">
+				                    <div class="tcont clearfix">
+				                        <div class="t-c clearfix fl">
+				                            <div class="contcat fl">
+				                                <a href="javascript:;">
+				                                    上海艺星整容医疗医院
+				                                </a>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="group clearfix">
+				                <div class="item-detail fl ">
+				                    <div class="clearfix">
+				                        <div class="item-img fl">
+				                            <a href="javascript:;">
+				                                <img src="image/dd/qg-1.jpg" alt="">
+				                            </a>
+				                        </div>
+				                        <div class="item-info fl">
+				                            <a href="javascript:;">
+				                                <h3 class="sku">[重睑术](切开或埋线)专为女性设计，为你打造灵动双眸拥有迷人气质</h3>
+				                                <div class="clearfix">
+				                                	<div class="money1 fl">预约金额：<i>200</i></div>
+				                                	<div class="num fr">数量：<i>1</i></div>
+				                                </div>
+				                            </a>
+				                        </div>
+				                    </div>
+				                    <div class="pay clearfix">
+	                                	<a href="../支付/index.html">去付款</a>
+	                                </div>
+				                </div>
+				            </div>
+				            <div class="group clearfix">
+				                <div class="item-detail fl ">
+				                    <div class="clearfix">
+				                        <div class="item-img fl">
+				                            <a href="javascript:;">
+				                                <img src="image/dd/qg-1.jpg" alt="">
+				                            </a>
+				                        </div>
+				                        <div class="item-info fl">
+				                            <a href="javascript:;">
+				                                <h3 class="sku">[重睑术](切开或埋线)专为女性设计，为你打造灵动双眸拥有迷人气质</h3>
+				                                <div class="clearfix">
+				                                	<div class="money1 fl">预约金额：<i>200</i></div>
+				                                	<div class="num fr">数量：<i>1</i></div>
+				                                </div>
+				                            </a>
+				                        </div>
+				                    </div>
+				                    <div class="pay clearfix">
+	                                	<a href="../支付/index.html">去付款</a>
+	                                </div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="bundlev">
+				            <div class="shop">
+				                <div class="title-shop">
+				                    <div class="tcont clearfix">
+				                        <div class="t-c clearfix fl">
+				                            <div class="contcat fl">
+				                                <a href="javascript:;">
+				                                    上海艺星整容医疗医院
+				                                </a>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="group clearfix">
+				                <div class="item-detail fl ">
+				                    <div class="clearfix">
+				                        <div class="item-img fl">
+				                            <a href="javascript:;">
+				                                <img src="image/dd/qg-1.jpg" alt="">
+				                            </a>
+				                        </div>
+				                        <div class="item-info fl">
+				                            <a href="javascript:;">
+				                                <h3 class="sku">[重睑术](切开或埋线)专为女性设计，为你打造灵动双眸拥有迷人气质</h3>
+				                                <div class="clearfix">
+				                                	<div class="money1 fl">预约金额：<i>200</i></div>
+				                                	<div class="num fr">数量：<i>1</i></div>
+				                                </div>
+				                            </a>
+				                        </div>
+				                    </div>
+				                    <div class="pay clearfix">
+										<a href="../发布评价/index.html">去评价</a>
+	                                	<span class="fr"></span>
+	                                </div>
+				                </div>
+				            </div>
+				        </div>
+					</div>
+				</ul>
+				<!-- 待付款 -->
+				<ul class="obligation">
+					<div class="wrap">
+						<div class="bundlev">
+				            <div class="shop">
+				                <div class="title-shop">
+				                    <div class="tcont clearfix">
+				                        <div class="shopcb fl">
+				                            <p>
+				                                <input type="checkbox"  id="130" style="display:none" class="t-cb" name="newslist">
+				                                <label for="130"></label>
+				                            </p>
+				                        </div>
+				                        <div class="t-c clearfix fl">
+				                            <div class="contcat fl">
+				                                <a href="javascript:;">
+				                                    上海艺星整容医疗医院
+				                                </a>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="group clearfix">
+				                <div class="item-detail fl ">
+				                    <div class="clearfix">
+				                        <div class="item-img fl">
+				                            <a href="javascript:;">
+				                                <img src="image/dd/qg-1.jpg" alt="">
+				                            </a>
+				                        </div>
+				                        <div class="item-info fl">
+				                            <a href="javascript:;">
+				                                <h3 class="sku">[重睑术](切开或埋线)专为女性设计，为你打造灵动双眸拥有迷人气质</h3>
+				                                <div class="clearfix">
+				                                	<div class="money1 fl">预约金额：<i>200</i></div>
+				                                	<div class="num fr">数量：<i>1</i></div>
+				                                </div>
+				                            </a>
+				                        </div>
+				                    </div>
+				                    <div class="pay clearfix">
+	                                	<a href="../支付/index.html">去付款</a>
+	                                </div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="bundlev">
+				            <div class="shop">
+				                <div class="title-shop">
+				                    <div class="tcont clearfix">
+				                        <div class="shopcb fl">
+				                            <p>
+				                                <input type="checkbox"  id="140" style="display:none" class="t-cb" name="newslist">
+				                                <label for="140"></label>
+				                            </p>
+				                        </div>
+				                        <div class="t-c clearfix fl">
+				                            <div class="contcat fl">
+				                                <a href="javascript:;">
+				                                    上海艺星整容医疗医院
+				                                </a>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="group clearfix">
+				                <div class="item-detail fl ">
+				                    <div class="clearfix">
+				                        <div class="item-img fl">
+				                            <a href="javascript:;">
+				                                <img src="image/dd/qg-1.jpg" alt="">
+				                            </a>
+				                        </div>
+				                        <div class="item-info fl">
+				                            <a href="javascript:;">
+				                                <h3 class="sku">[重睑术](切开或埋线)专为女性设计，为你打造灵动双眸拥有迷人气质</h3>
+				                                <div class="clearfix">
+				                                	<div class="money1 fl">预约金额：<i>200</i></div>
+				                                	<div class="num fr">数量：<i>1</i></div>
+				                                </div>
+				                            </a>
+				                        </div>
+				                    </div>
+				                    <div class="pay clearfix">
+	                                	<a href="../支付/index.html">去付款</a>
+	                                </div>
+				                </div>
+				            </div>
+				            <div class="group clearfix">
+				                <div class="item-detail fl ">
+				                    <div class="clearfix">
+				                        <div class="item-img fl">
+				                            <a href="javascript:;">
+				                                <img src="image/dd/qg-1.jpg" alt="">
+				                            </a>
+				                        </div>
+				                        <div class="item-info fl">
+				                            <a href="javascript:;">
+				                                <h3 class="sku">[重睑术](切开或埋线)专为女性设计，为你打造灵动双眸拥有迷人气质</h3>
+				                                <div class="clearfix">
+				                                	<div class="money1 fl">预约金额：<i>200</i></div>
+				                                	<div class="num fr">数量：<i>1</i></div>
+				                                </div>
+				                            </a>
+				                        </div>
+				                    </div>
+				                    <div class="pay clearfix">
+	                                	<a href="../支付/index.html">去付款</a>
+	                                </div>
+				                </div>
+				            </div>
+				        </div>
+					</div>
+				</ul> 
+				<!-- 已预约 -->
+				<ul class="already">
+					<div class="wrap">
+						<div class="bundlev">
+				            <div class="shop">
+				                <div class="title-shop">
+				                    <div class="tcont clearfix">
+				                        <div class="t-c clearfix fl">
+				                            <div class="contcat fl">
+				                                <a href="javascript:;">
+				                                    上海艺星整容医疗医院
+				                                </a>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="group clearfix">
+				                <div class="item-detail fl ">
+				                    <div class="clearfix">
+				                        <div class="item-img fl">
+				                            <a href="javascript:;">
+				                                <img src="image/dd/qg-1.jpg" alt="">
+				                            </a>
+				                        </div>
+				                        <div class="item-info fl">
+				                            <a href="javascript:;">
+				                                <h3 class="sku">[重睑术](切开或埋线)专为女性设计，为你打造灵动双眸拥有迷人气质</h3>
+				                                <div class="clearfix">
+				                                	<div class="money1 fl">预约金额：<i>200</i></div>
+				                                	<div class="num fr">数量：<i>1</i></div>
+				                                </div>
+				                            </a>
+				                        </div>
+				                    </div>
+				                    <div class="pay clearfix">
+	                                	<a>去不了</a>
+	                                	<span class="fr"></span>
+	                                </div>
+				                </div>
+				            </div>
+				        </div>
+				        <div class="bundlev">
+				            <div class="shop">
+				                <div class="title-shop">
+				                    <div class="tcont clearfix">
+				                        <div class="t-c clearfix fl">
+				                            <div class="contcat fl">
+				                                <a href="javascript:;">
+				                                    上海艺星整容医疗医院
+				                                </a>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="group clearfix">
+				                <div class="item-detail fl ">
+				                    <div class="clearfix">
+				                        <div class="item-img fl">
+				                            <a href="javascript:;">
+				                                <img src="image/dd/qg-1.jpg" alt="">
+				                            </a>
+				                        </div>
+				                        <div class="item-info fl">
+				                            <a href="javascript:;">
+				                                <h3 class="sku">[重睑术](切开或埋线)专为女性设计，为你打造灵动双眸拥有迷人气质</h3>
+				                                <div class="clearfix">
+				                                	<div class="money1 fl">预约金额：<i>200</i></div>
+				                                	<div class="num fr">数量：<i>1</i></div>
+				                                </div>
+				                            </a>
+				                        </div>
+				                    </div>
+				                    <div class="pay clearfix">
+	                                	<a>去不了</a>
+	                                	<span class="fr"></span>
+	                                </div>
+				                </div>
+				            </div>
+				            <div class="group clearfix">
+				                <div class="item-detail fl ">
+				                    <div class="clearfix">
+				                        <div class="item-img fl">
+				                            <a href="javascript:;">
+				                                <img src="image/dd/qg-1.jpg" alt="">
+				                            </a>
+				                        </div>
+				                        <div class="item-info fl">
+				                            <a href="javascript:;">
+				                                <h3 class="sku">[重睑术](切开或埋线)专为女性设计，为你打造灵动双眸拥有迷人气质</h3>
+				                                <div class="clearfix">
+				                                	<div class="money1 fl">预约金额：<i>200</i></div>
+				                                	<div class="num fr">数量：<i>1</i></div>
+				                                </div>
+				                            </a>
+				                        </div>
+				                    </div>
+				                    <div class="pay clearfix">
+	                                	<a>去不了</a>
+	                                	<span class="fr"></span>
+	                                </div>
+				                </div>
+				            </div>
+				        </div>
+					</div>
+				</ul>
+				<!-- 待预约 -->
+				<ul class="make">
+					<div class="wrap">
+						<div class="bundlev">
+				            <div class="shop">
+				                <div class="title-shop">
+				                    <div class="tcont clearfix">
+				                        <div class="t-c clearfix fl">
+				                            <div class="contcat fl">
+				                                <a href="javascript:;">
+				                                    上海艺星整容医疗医院
+				                                </a>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="group clearfix">
+				                <div class="item-detail fl ">
+				                    <div class="clearfix">
+				                        <div class="item-img fl">
+				                            <a href="javascript:;">
+				                                <img src="image/dd/qg-1.jpg" alt="">
+				                            </a>
+				                        </div>
+				                        <div class="item-info fl">
+				                            <a href="javascript:;">
+				                                <h3 class="sku">[重睑术](切开或埋线)专为女性设计，为你打造灵动双眸拥有迷人气质</h3>
+				                                <div class="clearfix">
+				                                	<div class="money1 fl">预约金额：<i>200</i></div>
+				                                	<div class="num fr">数量：<i>1</i></div>
+				                                </div>
+				                            </a>
+				                        </div>
+				                    </div>
+				                    <div class="pay clearfix">
+	                                	<a><img src="image/dd/tel.png" alt="">预约</a>
+	                                	<span class="fr"></span>
+	                                </div>
+				                </div>
+				            </div>
+				        </div>
+					</div>
+				</ul>
+				<!-- 待评价 -->
+				<ul class="evaluation">
+					<div class="wrap">
+						<div class="bundlev">
+				            <div class="shop">
+				                <div class="title-shop">
+				                    <div class="tcont clearfix">
+				                        <div class="t-c clearfix fl">
+				                            <div class="contcat fl">
+				                                <a href="javascript:;">
+				                                    上海艺星整容医疗医院
+				                                </a>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="group clearfix">
+				                <div class="item-detail fl ">
+				                    <div class="clearfix">
+				                        <div class="item-img fl">
+				                            <a href="javascript:;">
+				                                <img src="image/dd/qg-1.jpg" alt="">
+				                            </a>
+				                        </div>
+				                        <div class="item-info fl">
+				                            <a href="javascript:;">
+				                                <h3 class="sku">[重睑术](切开或埋线)专为女性设计，为你打造灵动双眸拥有迷人气质</h3>
+				                                <div class="clearfix">
+				                                	<div class="money1 fl">预约金额：<i>200</i></div>
+				                                	<div class="num fr">数量：<i>1</i></div>
+				                                </div>
+				                            </a>
+				                        </div>
+				                    </div>
+				                    <div class="pay clearfix">
+	                                	<a href="../发布评价/index.html">去评价</a>
+	                                	<span class="fr"></span>
+	                                </div>
+				                </div>
+				            </div>
+				        </div>
+					</div>
+				</ul>
+				<!-- 已取消 -->
+				<ul class="cancel">
+					<div class="wrap">
+						<div class="bundlev">
+				            <div class="shop">
+				                <div class="title-shop">
+				                    <div class="tcont clearfix">
+				                        <div class="t-c clearfix fl">
+				                            <div class="contcat fl">
+				                                <a href="javascript:;">
+				                                    上海艺星整容医疗医院
+				                                </a>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="group clearfix">
+				                <div class="item-detail fl ">
+				                    <div class="clearfix">
+				                        <div class="item-img fl">
+				                            <a href="javascript:;">
+				                                <img src="image/dd/qg-1.jpg" alt="">
+				                            </a>
+				                        </div>
+				                        <div class="item-info fl">
+				                            <a href="javascript:;">
+				                                <h3 class="sku">[重睑术](切开或埋线)专为女性设计，为你打造灵动双眸拥有迷人气质</h3>
+				                                <div class="clearfix">
+				                                	<div class="money1 fl">预约金额：<i>200</i></div>
+				                                	<div class="num fr">数量：<i>1</i></div>
+				                                </div>
+				                            </a>
+				                        </div>
+				                    </div>
+				                    <div class="pay clearfix">
+	                                	<a>删除订单</a>
+	                                	<span class="fr">交易关闭</span>
+	                                </div>
+				                </div>
+				            </div>
+				        </div>
+					</div>
+				</ul>
+				<!-- 已评价 -->
+				<ul class="cancel">
+					<div class="wrap">
+						<div class="bundlev">
+				            <div class="shop">
+				                <div class="title-shop">
+				                    <div class="tcont clearfix">
+				                        <div class="t-c clearfix fl">
+				                            <div class="contcat fl">
+				                                <a href="javascript:;">
+				                                    上海艺星整容医疗医院
+				                                </a>
+				                            </div>
+				                        </div>
+				                    </div>
+				                </div>
+				            </div>
+				            <div class="group clearfix">
+				                <div class="item-detail fl ">
+				                    <div class="clearfix">
+				                        <div class="item-img fl">
+				                            <a href="javascript:;">
+				                                <img src="image/dd/qg-1.jpg" alt="">
+				                            </a>
+				                        </div>
+				                        <div class="item-info fl">
+				                            <a href="javascript:;">
+				                                <h3 class="sku">[重睑术](切开或埋线)专为女性设计，为你打造灵动双眸拥有迷人气质</h3>
+				                                <div class="clearfix">
+				                                	<div class="money1 fl">预约金额：<i>200</i></div>
+				                                	<div class="num fr">数量：<i>1</i></div>
+				                                </div>
+				                            </a>
+				                        </div>
+				                    </div>
+				                    <div class="pay clearfix">
+	                                	<a href="pj-xqy.html">查看评价</a>
+	                                </div>
+				                </div>
+				            </div>
+				        </div>
+					</div>
+				</ul>
+			</div>
+		</div>
+		<input type="button" value="确认付款" class="btn">
+		<div class="already-opa">
+			<div class="opa"></div>
+			<div class="qbl-tc">
+				<img src="image/dd/wo.png" alt="">
+				<p>亲爱的“薯条君”您确定要取消预约吗？</p>
+				<b>这样的话<i>定金是不退</i>的哦！</b>
+				<div>
+					<input type="button" value="取消预约" class="qx">
+					<input type="button" value="还是去吧" class="jx">
+				</div>
+			</div>
+			<div class="qxcg">
+				<img src="image/dd/qxcg.png" alt="">
+				<p>亲爱的“薯条君”您已经成功取消预约</p>
+				<div class="tiao"></div>
+				<div class="close"></div>
+			</div>
+		</div>
+		<div class="make-opa">
+			<div class="opa"></div>
+			<div class="make-tel">
+				<img src="image/dd/make.png" alt="">
+				<p>亲爱的“薯条君”您确定要拨打预约电话吗？</p>
+				<div class="clearfix">
+					<a href="tel:1111111" class="jx" >继续拨打</a>
+					<!-- <input type="button" value="继续拨打" class="jx"> -->
+					<a href="javascript:;" class="qx" >取消</a>
+
+				</div>
+				<div class="tiao"></div>
+				<div class="close"></div>
+			</div>
+		</div>
+	</div>
+</body>
+	<script type="text/javascript">TouchSlide({ slideCell:"#leftTabBox" });</script>
+	<script>
+		$(function(){
+			// 已预约页面
+			$('.already .pay a').on('click',function(){
+				$('.already-opa').css('display','block');
+				$('.already-opa .qbl-tc').css('display','block');
+			});
+			$('.already-opa .qbl-tc .jx').on('touchend',function(){
+				$('.already-opa').css('display','none');
+			});
+			$('.already-opa .qbl-tc .qx').on('touchend',function(){
+				$('.already-opa .qbl-tc').css('display','none');
+				$('.already-opa .qxcg').css('display','block');
+			});
+			$('.already-opa .qxcg .close').on('touchend',function(){
+				$('.already-opa .qxcg').css('display','none');
+				$('.already-opa').css('display','none')
+			});
+			//待预约页面
+			$('.make .pay a').on('touchend',function(){
+				$('.make-opa').css('display','block');
+			});
+			$('.make-opa .make-tel .qx').on('touchend',function(){
+				$('.make-opa').css('display','none');
+			});
+			$('.make-opa .make-tel .close').on('touchend',function(){
+				$('.make-opa').css('display','none');
+			});
+			
+			$('.tabBox .hd ul li').click(function(){
+				$('.btn').css('display','none');
+			})
+			$('.tabBox .hd ul li:nth-child(2)').click(function(){
+				$('.btn').css('display','block');
+			})
+		})
+	</script>
+</html>
