@@ -186,6 +186,9 @@ img{
 .wrap{
     padding: 0.5rem 0.4rem 0.25rem;
 }
+.btn-zw{
+	height: 2.45rem;
+}
 .btn{
 	width: 18.75rem;
 	height: 2.45rem;
@@ -311,7 +314,7 @@ img{
 .close{
 	width: 1.3rem;
 	height: 1.3rem;
-	background: url(../img/close.png);
+	background: url(../image/dd/close.png);
 	background-size: 100%;
 	position: absolute;
 	right: 0.3rem;
@@ -462,10 +465,10 @@ img{
     color: #4A4A4A;
     margin-top: 0.5rem;
 }
-.pay{
+.pay ,.delorder{
 	margin-top: 0.25rem;
 }
-.pay a{
+.pay a,.delorder a{
 	border:1px solid #D7B359;
 	font-size: 0.6rem;
     color: #D7B359;
@@ -478,7 +481,7 @@ img{
     width: 3.95rem;
     float: right;
 }
-.pay span{
+.pay span ,.delorder span{
 	margin-top: 0.5rem;
     font-size: 0.5rem;
     color: #FF5C3B;

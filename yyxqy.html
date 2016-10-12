@@ -41,7 +41,7 @@
     				<img src="image/yyxqy/star1.png" alt="">
     				<img src="image/yyxqy/star1.png" alt="">
     			</div>
-    			<div class="collection fr">收藏</div>
+    			<div class="collect fr">收藏</div>
     		</div>
     	</div>
     	<div class="introduce">
@@ -50,6 +50,7 @@
     			<a href="javascript:;"><img src="image/yyxqy/show1.png" alt=""></a>
     			<a href="javascript:;"><img src="image/yyxqy/show1.png" alt=""></a>
     			<a href="javascript:;"><img src="image/yyxqy/show1.png" alt=""></a>
+                <a href="javascript:;"><img src="image/yyxqy/show1.png" alt=""></a>
     		</div>
     		<div class="tit">
     			<span></span>医院介绍
@@ -59,4 +60,12 @@
     	</div>
     </div>
 </body>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+    $(function(){
+        $('.collect').on('click',function(){
+            $(this).addClass('on');
+        })
+    })
+</script>
 </html>

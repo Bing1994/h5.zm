@@ -36,6 +36,13 @@ header{
 	border-radius: 50%;
 	margin-top: 1.25rem;
 }
+.xg{
+	position: absolute;
+	left: 10.2rem;
+	top: 4rem;
+	width: 0.75rem;
+	height: 0.75rem;
+}
 .name,.integral{
 	width: 4.225rem;
 	height: 0.75rem;

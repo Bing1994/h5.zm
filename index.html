@@ -37,8 +37,14 @@
     					<p>北京</p>
     				</div>
     				<div class="town fl">
-    					<p>北京</p>
-    					<p>上海</p>
+    					<p class="clearfix">
+                            <input type="radio" id='city' style="display:none">
+                            <label for="city">北京</label>
+                        </p>
+                        <p class="clearfix">
+                            <input type="radio" id='city' style="display:none">
+                            <label for="city">上海</label>
+                        </p>
     				</div>
     			</div>
     		</div>
@@ -232,7 +238,7 @@
 			$('.province p').removeClass('on');
 			$(this).addClass('on');
 		})
-		$('.town p').on('click',function(){
+		$('.town p label').on('click',function(){
 			$('.city i').html($(this).html());
 			$('.city-list').addClass('hide');
 			$('.city-list').removeClass('show');

@@ -22,6 +22,9 @@ header p{
 	text-align: center;
 	line-height: 0.75rem;
 }
+.nav-wrap{
+	height: 2.25rem;
+}
 .nav-zw{
 	width: 100%;
 	height:2.25rem;

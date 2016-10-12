@@ -110,15 +110,19 @@ header ul li:nth-child(1){
 	width: 0.675rem;
 	height: 0.65rem;
 }
-.collection{
+.collect{
 	width: 2.25rem;
 	height: 0.9rem;
 	line-height: 0.9rem;
 	text-align: center;
-	border: 0.025rem solid #D7B359;
+	border: 1px solid #D7B359;
 	border-radius: 0.2rem;
 	font-size: 0.5rem;
 	color: #D7B359;
+}
+.collect.on{
+	background: #D7B359;
+	color: #fff;
 }
 .introduce{
 	background: #fff;

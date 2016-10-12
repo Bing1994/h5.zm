@@ -191,12 +191,9 @@ img{
 
 }
 .fwxy .xy{
-	width: 80%;
+	width: 15.5rem;
 	height: 22.0rem;
 	background: #fff;
-	position: absolute;
-	z-index: 3;
-	left: 7%;
 	top: 1.0rem;
 	border-radius: 0.375rem;
 	padding: 0 10px;
@@ -206,19 +203,22 @@ img{
 }
 .fwxy .xy h2{
 	text-align: center;
-	font-size: 18px;
+	font-size: 0.6rem;
 	margin:0.25rem 0;
 }
+.fwxy .xy h3{
+	font-size: 0.6rem;
+}
 .fwxy .xy p{
-	font-size: 12px;
+	font-size: 0.5rem;
 }
 .tiao{
 	width: 0.1rem;
 	height: 2.0rem;
 	background: #fff;
 	position: absolute;
-	right: 2rem;
-	bottom: 3.0rem;
+	right: 1rem;
+	bottom: -2rem;
 	z-index: 2
 }
 .close{
@@ -226,8 +226,8 @@ img{
 	height: 1.3rem;
 	background: url(../image/tjdd/close.png);
 	position: absolute;
-	bottom: 1.7rem;
-	right: 1.4rem;
+	bottom: -3.2rem;
+	right: .4rem;
 	background-size: 100%;
 	z-index: 2;
 }
@@ -430,4 +430,9 @@ img{
 }
 .cjje i{
 	font-size: 0.75rem;
+}
+.fwxy-w{
+	position: absolute;
+	z-index: 1;
+	margin-left: 1.25rem;
 }

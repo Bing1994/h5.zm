@@ -218,7 +218,7 @@
                     </p>
                 </div>
                 <div class="item-detail fl ">
-                    <div class="clearfix">
+                    <div class="del clearfix">
                         <div class="item-img fl">
                             <a href="javascript:;">
                                 <img src="image/bcar/qg-1.jpg" alt="">
@@ -292,7 +292,9 @@
                         <p>预约总金额：<i>0.0</i></p>
                     </div>
                     <div class="btn fr">
-                        <p>结算</p>
+                        <a href="tjdd.html">
+                            <p>结算</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -303,9 +305,26 @@
 <script src="js/jquery-1.7.2.js"></script>
 <script>
     $(function(){
+        // 商品下面购买信息个数
+        $('.group input[name=newslist]').click(function(){
+            console.log($(this).attr('checked'))
+            var Gl=$(this).parents('.bundlev').find('.group').length;
+            var InC=$(this).parents('.bundlev').find('.group input[name=newslist]:checked').length;
+            if(Gl==InC){ //相等
+                $(this).parents('.bundlev').find('.shopcb input').attr('checked','true');
+            }else{   //不相等
+                $(this).parents('.bundlev').find('.shopcb input').removeAttr('checked')
+            }
+            GetCount();
+            all();
+            
+        })
+
         $('.state').on('click',function(){
             if($(this).find('p').html()=='编辑'){
                 $(this).parents('.bundlev').find('.item-info').hide();
+                $(this).parents('.bundlev').find('.delete .del  .btn-input input').val($(this).parents('.bundlev').find('.pay .quantity .btn-input input').val());
+
                 $(this).parents('.bundlev').find('.pay').hide();
                 $(this).parents('.bundlev').find('.delete').show();
                 $(this).find('span').hide();
@@ -313,16 +332,21 @@
                 $(this).parents('.bundlev').find('.item-cb label').hide();
                 $(this).parents('.bundlev').find('.title-shop .t-cb+label').hide();
                 $("input").removeAttr('checked');
+                $('.footer').hide();
                 success();
+                GetCount();
             }else{
                 $(this).parents('.bundlev').find('.item-info').show();
                 $(this).find('p').html('编辑').css('color','#4A4A4A');
+                $('.footer').show();
+                $(this).parents('.bundlev').find('.pay .quantity .btn-input input').val($(this).parents('.bundlev').find('.delete .del  .btn-input input').val());
                 $(this).parents('.bundlev').find('.pay').show();
                 $(this).parents('.bundlev').find('.delete').hide();
                 $(this).find('span').show();
                 $(this).parents('.bundlev').find('.item-cb label').show();
                 $(this).parents('.bundlev').find('.title-shop .t-cb+label').show();
                 success();
+                GetCount();
             }
         });
         function success(){
@@ -334,28 +358,41 @@
         }
         success();
         //商铺全选
-        $(".bundlev .shopcb label").click(function () {
-            if($(this).prev().attr("checked")){
-                $(this).parents(".bundlev").find(".group input[name=newslist]").each(function () {
-                    $(this).attr("checked", false);
-                } )
-                GetCount();
-            }else{
-                $(this).parents(".bundlev").find(".group input[name=newslist]").each(function () {
-                    $(this).attr("checked", true);
-                });
-                GetCount();
+        function all(){
+            var Bcount=$('.bundlev').length;
+            var B_tit=$('.bundlev .shopcb input[name=newslist]:checked').length;
+            if(Bcount==B_tit){  //相等
+                $('.ft-cb label').prev().attr("checked",'true');
+            }else{  //不相等
+                $('.ft-cb label').prev().removeAttr('checked');
             }
+        }
+        $(".bundlev .shopcb input[name=newslist]").click(function () {
+            
+            if($(this).attr('checked')){
+                $(this).parents('.bundlev').find('.group input[name=newslist]').
+                attr('checked','true');
+            }else{
+                $(this).parents('.bundlev').find('.group input[name=newslist]').
+                removeAttr('checked');
+            }
+            GetCount();
+            all();
         })
         //全选
         $('.ft-cb label').click(function(){
             if($(this).prev().attr("checked")){
                 $(this).parents(".wrap").find("input[name=newslist]").each(function () {
-                    $(this).attr("checked", false);
+                    $(this).removeAttr("checked");
                 } )
-                GetCount();
+            }else{
+                $(this).parents(".wrap").find("input[name=newslist]").each(function () {
+                    $(this).attr("checked",'true');
+                } )
             }
+            GetCount();
         })
+
         
 
         //数字加减
@@ -369,47 +406,7 @@
                 GetCount(); 
             }
         })
-        // function setTotal(who) {
-        //     who.parent().prev().find("i").html((parseInt(who.parents('.pay').find('input').val()) * who.parents(".group").find(".item-info a .money1 i").html()));
-
-        //     who.parents('.delete').find(".price i").html((parseInt(who.parents('.del').find('input').val()) * who.parents(".group").find(".item-info a .money1 i").html()));
-            
-        // }
         
-        $('.item-cb label').click(function(){
-            $(this).parents('.bundlev').children('.group').length;
-        })
-        // 全选
-        //单选
-        // var cout=0;
-        // var couts=$(".group input[name=newslist]").length;
-        // $(".group input[name=newslist]").click(function () {
-        //      console.log(couts)
-
-        //     cout++;
-
-        //     if(cout==couts){
-        //         console.log(cout)
-        //         $('.ft-cb label').prev().attr('checked');
-        //     }
-        //     GetCount();
-            
-        // });
-        var abc=0;
-
-         $(".bundlev input[name=newslist]").click(function () {
-            abc++;
-            console.log(abc);
-            console.log($(this).parents('.bundlev').find('.group').length);
-            if(abc==$(this).parents('bundlev').find('.group').length){
-
-            }
-            $('.bundlev').each(function(){
-                // console.log($(this).find('.group').length)
-                
-            })
-            GetCount();
-         })
         function GetCount() {
             //单个预约金额
             var Gin=$('.group .pay input');
@@ -435,24 +432,20 @@
         }
         GetCount();
 
-        //删除
+        // 删除
         $('.item-del p').on('click',function(){
-            // console.log($(this).parents('.bundlev').find('.group').length)
+            console.log($(this).parents('.bundlev').find('.group').length)
             if($(this).parents('.bundlev').find('.group').length==1){
-                $(this).parents('.bundlev').hide();
+                $(this).parents('.bundlev').remove();
+                $('.footer').show();
 
             }else if($(this).parents('.bundlev').find('.group').length>1){
                 // console.log($(this).parent('.group'))
-                $(this).parents('.group').hide();
+                $(this).parents('.group').remove();
+                $('.footer').hide();
             }
-                $('.footer').show();
         })
 
-
-        // function AllClick(){
-        //     console.log($('.bundlev input[name=newslist]'))
-        // }
-        // AllClick();
     })
 </script>
 </html>
